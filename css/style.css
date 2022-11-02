@@ -67,7 +67,7 @@ body{
 	border-radius: 10px;
 	color: rgb(112, 123, 110);
 	text-transform: uppercase;
-	flex: 0 1 48%;
+	flex: 0 1 250px;
 }
 .form__label{
 	flex: 0 1 48%;
