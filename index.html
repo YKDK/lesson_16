@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson_16</title>
+</head>
+
+
+<body>  
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+  
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__page">        
+        <section class="main__section">
+          <div class="main__practice practice">
+            <form class="practice__form form" action="#" method="post" enctype="multipart/form-data">
+
+              <!-- forms для атрибуту type="text" -->
+              <div class="form__line">
+                <label class="form__label form__label--text" for="name">Введіть своє ім'я</label>
+                <input class="form__input form__input--text" required  autocomplete="off" placeholder="Enter your name" id="name" name="name" type="text">
+              </div>
+
+              <div class="form__line">
+                <label class="form__label form__label--text" for="last_name">Введіть своє прізвище</label>
+                <input class="form__input form__input--text" required  autocomplete="off" placeholder="Enter your last name" id="last_name" name="last_name" type="text">
+              </div>
+
+              <div class="form__line">
+                <label class="form__label form__label--text" for="age">Введіть ваш вік</label>
+                <input class="form__input form__input--text" required  autocomplete="off" placeholder="Enter your age" id="age" name="age" type="text">
+              </div>
+
+              <!-- forms для атрибуту type="email" -->
+              <div class="form__line">
+                <label class="form__label form__label--email" for="last_name">Введіть свій email</label>
+                <input class="form__input form__input--email" required  autocomplete="off" placeholder="Enter your email" id="email" name="email" type="email">
+              </div>
+
+              <!-- forms для атрибуту type="hidden" -->
+              <div class="form__line">
+                <input class="form__input form__input--hidden" value="123456789"  name="nambers" type="hidden">
+              </div>
+
+              <!-- forms для атрибуту type="tel" -->
+              <div class="form__line">
+                <label class="form__label form__label--tel" for="tel">Введіть свій телефон</label>
+                <input class="form__input form__input--tel" required  autocomplete="off" placeholder="Enter your phone number" id="tel" name="tel" type="tel">
+              </div>
+
+              <!-- forms для атрибуту type="password" -->
+              <div class="form__line">
+                <label class="form__label form__label--password" for="password">Введіть свій пароль</label>
+                <input class="form__input form__input--password" required  autocomplete="off" placeholder="Enter your password" id="password" name="password" type="password">
+              </div>
+
+              <!-- forms для атрибуту type="number" -->
+              <div class="form__line">
+                <label class="form__label form__label--namber" for="number">Введіть свій порядковий номер</label>
+                <input class="form__input form__input--number" required  autocomplete="on" placeholder="Enter your number" id="number" name="number" type="number">
+              </div>
+
+              <!-- forms для атрибуту type="color" -->
+              <div class="form__line">
+                <label class="form__label form__label--color" for="color">виберіть колір</label>
+                <input class="form__input form__input--color"  value="#78f3e1" id="color" name="color" type="color">
+              </div>
+
+              <!-- forms для атрибуту type="search" -->
+              <div class="form__line">
+                <label class="form__label form__label--search" for="search">Пошук</label>
+                <input class="form__input form__input--search"  autocomplete="on" placeholder="Enter a search" id="search" name="search" type="search">
+              </div>
+
+              <!-- forms для атрибуту type="date" -->
+              <div class="form__line">
+                <label class="form__label form__label--date" for="date">Введіть дату народження</label>
+                <input class="form__input form__input--date" required id="date" name="date" type="date">
+              </div>
+
+              <!-- forms для атрибуту type="range" -->
+              <div class="form__line form__line--range">
+                <input class="form__input form__input--range"   id="range" name="range" type="range">
+              </div>
+              
+              <!-- forms для атрибуту type="checkbox" -->
+              <div class="form__line form__line--checkbox">
+                <input required class="form__input form__input--checkbox"   id="check_yes" name="check_yes" type="checkbox"> 
+
+                <label class="form__label form__label--checkbox" for="check_yes"><span class="form__checkbox-text">у вас є автомобіль?</span></label>
+              </div>
+
+              <!-- forms для атрибуту type="radio" -->
+              <div class="form__line form__line--radio">
+                <div class="form__question">Ваша стать?</div>
+
+                <div class="form__gender-male">
+                  <input checked class="form__input form__input--radio-male" value="male"  id="male" name="gender" required type="radio"> 
+
+                  <label class="form__label form__label--radio" for="male">чоловік</label>
+                </div>
+
+                <div class="form__gender-female">
+                  <input class="form__input form__input--radio-female"  value="female" id="female" name="gender" required type="radio"> 
+
+                  <label class="form__label form__label--radio" for="female">жінка</label>
+                </div>
+              </div>
+
+              <!-- forms для атрибуту type="file" -->
+              <div class="form__line form__line--file">
+                <input class="form__input form__input--file" id="file" name="file" multiple accept="image/png" type="file"> 
+              </div>
+
+              <!-- forms textarea -->
+              <div class="form__line form__line--area">
+                <label class="form__label form__label--area" for="area">Додаткова інформація</label>
+                <div class="form__area">
+                  <textarea  name="area" id="area" placeholder="Enter your massege"></textarea>
+                </div>
+              </div>
+              
+              <!-- forms button type="reset" type="submit"-->
+              <div class="form__line form__line--button">
+                <button class="button button--reset" type="reset">reset form</button>
+                <button class="button button--submit" type="submit">submit</button>                             
+              </div>
+              
+              <!-- select button -->
+              <div class="form__line select">
+                <select class="select__country" name="region">
+                  <option selected value="
+                  select region">виберіть область</option>
+                  <option value="Autonomous Republic of Crimea">Автономна Республіка Крим</option>
+                  <option value="Vinnytsia region">Вінницька область</option>
+                  <option value="Volyn region">Волинська область</option>
+                  <option value="Dnipropetrovsk region">Дніпропетровська область</option>
+                  <option value="Donetsk region">Донецька область</option>
+                  <option value="Zhytomyr region">Житомирська область</option>
+                  <option value="Zakarpattia region">Закарпатська область</option>
+                  <option value="Zaporizhzhia region">Запорізька область</option>
+                  <option value="Kyiv region">Київська область</option>
+                  <option value="Ivano-Frankivsk region">Івано-Франківська область</option>
+                  <option value="Kirovohrad region">Кіровоградська область</option>
+                  <option value="Luhansk region">Луганська область</option>
+                  <option value="Lviv region">Львівська область	</option>
+                  <option value="Mykolaiv region">Миколаївська область</option>
+                  <option value="Odesa region">Одеська область</option>
+                  <option value="Poltava region">Полтавська область</option>
+                  <option value="Rivne region">Рівненська область</option>
+                  <option value="Sumy region">Сумська область	</option>
+                  <option value="Ternopil region">Тернопільська область</option>
+                  <option value="Kharkiv region">Харківська область</option>
+                  <option value="Kherson region">Херсонська область</option>
+                  <option value="Khmelnytskyi region">Хмельницька область</option>
+                  <option value="Cherkasy region">Черкаська область</option>
+                  <option value="Chernivtsi region">Чернівецька область</option>
+                  <option value="Chernihiv region">Чернігівська область</option>
+                  <option value="Kyiv">Київ</option>
+                  <option value="Sevastopol">Севастополь</option>
+                </select>
+              </div>
+            </form>  
+          </div>
+            <section class="main__home-work home-work">
+              <div class="main__container">
+                <div class="home-work__body">
+                  <div class="home-work__image">
+                    <img src="img/illustration.svg" alt="illustration">
+                  </div>
+                  <div class="home-work__feedback feedback">
+                    <div class="feedback__article">
+                      <h2 class="feedback__subtitle subtitle">Any questions?</h2>
+                      <h1 class="feedback__title title">Drop us a line</h1>
+                    </div>
+                    <div class="feedback__forms forms">
+                      <form action="#" method="post" enctype="multipart/form-data" class="forms__send-block">
+
+                        <div class="forms__text-block">
+                          <div class="forms__text forms__text--first-name">
+                            <label class="forms__label forms__label--text" for="first-name">First Name*</label>
+                            <input class="forms__input forms__input--text" required  autocomplete="off" placeholder="Your first name" id="first-name" name="first-name" type="text">
+                          </div>
+
+                          <div class="forms__text forms__text--last-name">
+                            <label class="forms__label forms__label--text" for="last-name">Last  Name*</label>
+                            <input class="forms__input forms__input--text" required  autocomplete="off" placeholder="Your last name" id="last-name" name="last-name" type="text">
+                          </div>
+
+                          <div class="forms__text forms__text--email">
+                            <label class="forms__label forms__label--text" for="mail">Email*</label>
+                            <input class="forms__input forms__input--text" required  autocomplete="off" placeholder="Your working email" id="mail" name="mail" type="email">
+                          </div>
+
+                          <div class="forms__text forms__text--phone">
+                            <label class="forms__label forms__label--text" for="phone">Phone</label>
+                            <input class="forms__input forms__input--text" required  autocomplete="off" placeholder="Your phone number" id="phone" name="phone" type="tel">
+                          </div>
+
+                          <div class="forms__text forms__text--message">
+                            <label class="forms__label forms__label--text" for="message">Message*</label>
+                            
+                            <textarea class="forms__message" name="message" id="message" required placeholder="Your message"></textarea>
+                          </div>
+                        </div>
+        
+                        <div class="forms__rulls">
+                          <div class="forms__agree">
+                            <input required class="forms__input forms__input--checkbox-agree"  id="agree" name="agree" type="checkbox"> 
+                                  
+                            <label class="forms__label forms__label--checkbox-agree" for="agree"><span class="forms__label--checkbox-text">I agree to receive communications from Createx Online School</span></label>
+                          </div>
+
+                          <div class="forms__submit ">
+                            <button class="forms__button button button--submit" type="submit">Send message</button>                             
+                          </div>  
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+
+    </footer>    
+  </div>
+</body>
+</html>
