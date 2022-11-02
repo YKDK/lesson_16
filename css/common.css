@@ -34,7 +34,7 @@
 	color: #1E212C;
 }
 .forms__label--text {
-  display: block;
+  display: inline-block;
   color: #424551;
   line-height: 1.6;
   padding: 3px 0;
