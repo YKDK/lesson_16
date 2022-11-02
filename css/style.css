@@ -247,6 +247,7 @@ background: rgb(30, 239, 11);
 .home-work__image {
 	flex: 0 0 37%;
 	align-self: center;
+	min-width: 350px;
 }
 .home-work__image img{
 	max-width: 100%;
