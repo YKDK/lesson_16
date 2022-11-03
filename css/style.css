@@ -286,7 +286,7 @@ background: rgb(30, 239, 11);
 	padding: 0 2px;
 }
 .forms__text {
-	flex: 0 0 50%;
+	flex: 0 0 350px;
 	margin: 0 -12px;
 	padding: 0 12px;
 
