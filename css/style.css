@@ -311,8 +311,8 @@ position: relative;
 
 .forms__input--checkbox-agree {
 	position: absolute;
-	top: 13px;
-	left: 8px;
+	top: -35px;
+	left: 10px;
 	width: 1px;
 	height: 1px;
 	opacity: 0;
@@ -324,7 +324,7 @@ position: relative;
 	/* align-items: center; */
 	gap: 12px;
 	flex: 1 1 auto;
-
+	padding: 3px;
 }
 
 .forms__input--checkbox-agree:hover + .forms__label--checkbox-agree::before{
